@@ -48,3 +48,6 @@ def armstng_check(num):
         return "Congratulations! you have got an Armstrong Number."
     return "Sorry! the number given by is not an Armstrong Number."
 print(armstng_check(num))
+
+
+
