@@ -1,10 +1,8 @@
+import math
+
 # Basic_math_logic_buildup revision
 
 # Extraction of digits from an integer
-
-from ast import LShift
-
-
 num = 123456213
 n = num
 lst = []
@@ -31,7 +29,7 @@ print(count)
 
 # using log method 
 
-import math
+
 n = -1223
 if n == 0:
     print(0)
@@ -40,14 +38,14 @@ else:
     print(digits)
 
 # part 2 
-from math import * 
+
 
 n = 0
 def find_number_of_digits(n):
     if n == 0:
         return 0
     else:
-        return int(log10(abs(n))+1) 
+        return int(math.log10(abs(n))+1) 
 print(find_number_of_digits(n))
 
 # reverse a digit 

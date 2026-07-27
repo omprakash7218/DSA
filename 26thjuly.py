@@ -26,6 +26,7 @@ def factors(n):
 print(factors(25))
 
 from math import sqrt
+
 n = 25
 result = []
 for i in range(1,int(sqrt(n))+1):
@@ -53,8 +54,8 @@ print(dic)
 # without using .get method
 
 nums = [1,2,3,2,4,3,3]
-frequency_map = dict()
-for i in range(0,len(nums)):
+frequency_map = {}
+for i in range(len(nums)):
 	if nums[i] in frequency_map:       # dictionary mein if statement tc O(N)
 		frequency_map[nums[i]]  +=  1
 	else:

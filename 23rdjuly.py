@@ -28,7 +28,7 @@ arr = [10, 20, 30, 40, 50]
 arr_even=[]
 for i in range(len(arr)):
 	if i%2 == 0:
-		arr_even.append((arr[i]))
+		arr_even.append(arr[i])
 
 print(arr_even)
 
