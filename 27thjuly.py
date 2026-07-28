@@ -10,7 +10,7 @@ else:
 # Introduction to  Hashing
 n = [1, 2, 3, 4, 5, 6, 1, 1, 2, 4, 5, 6, 8]
 m = [1, 12, 23, 2, 3, 4, 5, 6, 7, 8, 89, 9, -821]
-freq_map = {}
+freq_map: dict[int, int] = {}
 for num in m:
     for x in n:
         if x == num:
@@ -21,7 +21,7 @@ hash_list = [0] * 11
 for i in n:
     hash_list[i] += 1
 print(hash_list)
-freq_maped = {}
+freq_maped: dict[int, int] = {}
 for j in m:
     if j < len(hash_list) and j > 0:
         freq_maped[j] = freq_maped.get(j, 0) + hash_list[j]
@@ -29,7 +29,7 @@ print(freq_maped)
 
 # using predifined dictionary (hashed dict)
 
-hash_dict = {}
+hash_dict: dict[int, int] = {}
 for num in n:
     hash_dict[num] = hash_dict.get(num, 0) + 1
 final_dictionary = {}
@@ -41,7 +41,7 @@ print("-------------------------------------")
 p = "mynameisanthunigonjalwis"
 q = ["a", "b", "c", "s", "d"]
 
-hashed_dict = {}
+hashed_dict: dict[str, int] = {}
 
 for char in p:
     hashed_dict[char] = hashed_dict.get(char, 0) + 1
@@ -65,7 +65,7 @@ for char in s:
     hashed_array[postion] += 1
 
 print(hashed_array)
-dict_output = {}
+dict_output: dict[str, int] = {}
 for char in q:
     postion = ord(char) - 97
     if hashed_array[postion] > 0:
@@ -76,11 +76,11 @@ print(dict_output)
 # recursion
 
 
-def greet():
+def greets():
     print("Hello everyone!")
 
 
-greet()
+greets()
 
 # What if we want to greet 7 times in a row
 
