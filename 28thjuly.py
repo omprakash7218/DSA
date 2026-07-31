@@ -71,4 +71,4 @@ def reverse_array(x, left=0, right=None):
 
 
 z = [2, 4, 5, 6, 6, 7, 8, 9, 123]
-print(reverse_array(z))
+print(reverse_array(z,2,5))
