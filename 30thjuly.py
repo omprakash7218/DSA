@@ -1,8 +1,8 @@
-# reverse an array using recursion 
+# reverse an array using recursion
 def rev(ar,i=0,e=None):
     if e == None:
         e = len(ar)-1
-    
+
     if i>e:
         return ar
     ar[i],ar[e]=ar[e],ar[i]
@@ -10,13 +10,13 @@ def rev(ar,i=0,e=None):
 ar = [1,2,3,4]
 print(rev(ar))
 
-# find the largest element in an array 
+# find the largest element in an array
 ari = [1,2,3,4,5]
 def largest(ar):
     max = 0
     for num in ar :
         if num > max :
-            max = num 
+            max = num
     return max
 
 print(largest(ari))
@@ -24,26 +24,24 @@ print(largest(ari))
 # find the second largest element in an array without sorting
 def secondlargest(ar):
     lar = 0
-    slar = 0 
+    slar = 0
     for num in ar:
         if num > lar:
             slar = lar
-            lar = num 
-            
+            lar = num
     return slar
 print(secondlargest(ari))
 
-# check if the array is sorted 
+# check if the array is sorted
 
 def sort(ar):
     for l in range(len(ar)-1):
         if ar[l] > ar[l+1]:
             print("Not sorted")
-            return 
+            return
         else:
             continue
     print("Sorted")
-        
 (sort(ari))
 
 # Selection sort algorithm
@@ -57,7 +55,7 @@ for l in range(len(arr)-1):
 
 print(arr)
 
-# SORT USING SELECTION SORT BUT IN DECREASING ORDER 
+# SORT USING SELECTION SORT BUT IN DECREASING ORDER
 
 aru = [2,3,5,61,6,12,6]
 for l in range(len(aru)-1):
@@ -68,9 +66,8 @@ for l in range(len(aru)-1):
 
     aru[max_ind],aru[l] = aru[l],aru[max_ind]
 print(aru)
-            
 
-# Bubble sort 
+# Bubble sort
 
 arj = [5,1,25,12,7,9,2,3,1,4]
 j = len(arj)
@@ -82,10 +79,10 @@ while j != 1:
 
 print(arj)
 
-# code and debug version of bubble sort 
+# code and debug version of bubble sort
 arq = [5,1,25,12,7,9,2,3,1,4]
 
 
 
-# insertion sort 
+# insertion sort
 
